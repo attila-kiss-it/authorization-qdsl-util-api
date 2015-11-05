@@ -11,9 +11,9 @@ BooleanExpression authrPredicate =
     authorizationQdslUtil.authorizationPredicate(
         userResourceId, book.resourceId, "read", "edit");
 
-SQLQuery query = new SQLQuery(connection, configuration);
+SQLQuery<Object> query = new SQLQuery<>(connection, configuration);
 
-return query.from(book)...where(authrPredicate)...list(...);
+return query.select(...)...from(book)...where(authrPredicate)...fetch();
 ```
 
 For more information check the javadoc of the 
