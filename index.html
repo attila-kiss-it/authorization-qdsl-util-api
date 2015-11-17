@@ -80,7 +80,7 @@
 
       <div class="bs-docs-featurette cookbook">
         <h2 id="example_usage" class="bs-docs-featurette-title">Example usage</h2>
-        <pre class="prettyprint lang-java">QBook book = QBook.book;
+        <pre class="prettyprint">QBook book = QBook.book;
 BooleanExpression authrPredicate = 
     authorizationQdslUtil.authorizationPredicate(
         userResourceId, book.resourceId, "read", "edit");
@@ -138,6 +138,7 @@ return query.from(book)...where(authrPredicate)...list(...);</pre>
         s.parentNode.insertBefore(ga, s);
       })();
     </script>
+  <script src="http://www.everit.org/js/prettify/run_prettify.js"></script>
 </body>
 
 </html>
