@@ -15,8 +15,8 @@
  */
 package org.everit.authorization.qdsl.util;
 
-import com.mysema.query.types.Expression;
-import com.mysema.query.types.expr.BooleanExpression;
+import com.querydsl.core.types.Expression;
+import com.querydsl.core.types.dsl.BooleanExpression;
 
 /**
  * Utility to Authorization Querydsl.
